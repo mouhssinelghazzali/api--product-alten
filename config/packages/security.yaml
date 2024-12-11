@@ -29,6 +29,6 @@ security:
             provider: app_user_provider
 
     access_control:
-        - { path: ^/api/docs, roles: IS_AUTHENTICATED_ANONYMOUSLY } # Allows accessing the Swagger UI
+        - { path: ^/api/docs, roles: PUBLIC_ACCESS }
         - { path: ^/api/login, roles: PUBLIC_ACCESS }
-        - { path: ^/api/users, roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/products, roles: IS_AUTHENTICATED_FULLY }

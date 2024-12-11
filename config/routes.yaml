@@ -1,3 +1,8 @@
 authentication_token:
     path: /api/login
     methods: ['POST']
+
+account_create:
+    path: /account
+    controller: App\Controller\Api\AccountController::createAccount
+    methods: POST
